@@ -4,7 +4,7 @@ import { createApp } from "vue";
 // console.log("hello from application.js")
 
 
-const url = "http://www.omdbapi.com/?s=fast and furious&apikey=adf1f2d7"
+const url = "https://www.omdbapi.com/?s=fast and furious&apikey=adf1f2d7"
 
 
 const results = document.querySelector("#results");
