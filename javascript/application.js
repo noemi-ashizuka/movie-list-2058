@@ -103,35 +103,35 @@ const template = document.querySelector("#movieCardTemplate").innerHTML;
 //   });
 // });
 
-// fetch(url)
-// .then(response => response.json())
-// .then((data) => {
-//   // change the dom
-//   // const fruits = {
-//   //   "fruits": [
-//   //     { "name": "apple", "price": 3 },
-//   //     { "name": "pear", "price": 2 },
-//   //     { "name": "banana", "price": 5 }
-//   //   ]
-//   // }
-//   const movieData = {
-//     "movies": data.Search
-//   }
+fetch(url)
+.then(response => response.json())
+.then((data) => {
+  // change the dom
+  // const fruits = {
+  //   "fruits": [
+  //     { "name": "apple", "price": 3 },
+  //     { "name": "pear", "price": 2 },
+  //     { "name": "banana", "price": 5 }
+  //   ]
+  // }
+  const movieData = {
+    "movies": data.Search
+  }
 
-//   console.log(data.Search);
-//   const output = Mustache.render(template, movieData);
-//   results.innerHTML = output;
-//   // results.insertAdjacentHTML("afterbegin", output);
-// });
+  console.log(data.Search);
+  const output = Mustache.render(template, movieData);
+  results.innerHTML = output;
+  // results.insertAdjacentHTML("afterbegin", output);
+});
 
 
 
 // Vue JS
 
-createApp({
-  data() {
-    return {
-      message: "Hello batch 2058!"
-    }
-  }
-}).mount("#results")
+// createApp({
+//   data() {
+//     return {
+//       message: "Hello batch 2058!"
+//     }
+//   }
+// }).mount("#results")
